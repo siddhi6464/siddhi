@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Student Portfolio - Siddhi Agarwal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #000; /* Set font color to black */
+}
+
+/* Style the header */
+header {
+  background-color: #B0E0E6;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that float next to each other */
+nav {
+  float: left;
+  width: 25%;
+  background: #333;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  background-color: #B0E0E6;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #A2D4D9;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 75%;
+  background-color: #f8f8f8;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #B0E0E6;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Student Portfolio</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#achievements">My Achievements</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 id="about-me">About Me</h1>
+    <p>Hello, I'm Siddhi Agarwal, currently studying at MIT World Peace University, pursuing a B.Tech in Computer Science and Engineering. I am passionate about technology and innovation, constantly seeking opportunities to learn and grow in the field of computer science.</p>
+    <img src="your-image.jpg" alt="Siddhi Agarwal" style="width:200px;height:auto; border-radius:50%; margin-top: 20px;">
+    
+    <h1 id="achievements">My Achievements</h1>
+    <ul>
+      <li>Dean's List 2021 - Recognized for academic excellence</li>
+      <li>Winner of Coding Hackathon 2022 - Developed a mobile app for disaster management</li>
+      <li>Member of University Robotics Club - Participated in national level competitions</li>
+      <li>Published Research Paper on Machine Learning - Presented at XYZ Conference 2023</li>
+    </ul>
+    
+    <h1 id="skills">Skills</h1>
+    <table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+      <tr>
+        <th>Skill</th>
+        <th>Proficiency</th>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>HTML/CSS</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>Machine Learning</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>Data Analysis</td>
+        <td>Advanced</td>
+      </tr>
+    </table>
+    
+    <h1 id="projects">Projects</h1>
+    <ul>
+      <li><strong>Disaster Management App:</strong> A mobile application to assist during natural disasters by providing real-time information and resources.</li>
+      <li><strong>Robotics Automation:</strong> Developed an automated robotic system for industrial applications using Arduino and Python.</li>
+      <li><strong>Machine Learning Model:</strong> Created a predictive model for analyzing customer data using Python and scikit-learn.</li>
+    </ul>
+    
+    <h1 id="contact">Contact</h1>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea><br>
+      <input type="submit" value="Send" style="background-color: #B0E0E6; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+      <input type="reset" value="Reset" style="background-color: #d9534f; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+    </form>
+    
+    <p>For more information, visit my <a href="https://example.com" target="_blank" style="color: #B0E0E6;">website</a>.</p>
+  </article>
+</section>
+
+<footer>
+  <p>&copy; 2024 Siddhi Agarwal - All rights reserved</p>
+</footer>
+
+</body>
+</html>
